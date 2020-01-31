@@ -1,0 +1,14 @@
+# This is an example Database resource.  Provision it like this:
+#
+# kubectl create -f example.yaml
+#
+# If you didn't define a "mysql" type, adjust the type as appropriate.
+
+apiVersion: helstern/v1
+kind: Database
+metadata:
+  name: example-db
+  namespace: default
+spec:
+  secretName: staging-database
+  type: mysql
